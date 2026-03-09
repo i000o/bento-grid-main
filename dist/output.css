@@ -1,4 +1,5 @@
 /*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -7,7 +8,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-emerald-600: oklch(59.6% 0.145 163.225);
     --spacing: 0.25rem;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -167,14 +172,59 @@
   .start {
     inset-inline-start: var(--spacing);
   }
+  .col-\[1\] {
+    grid-column: 1;
+  }
+  .row-\[8\] {
+    grid-row: 8;
+  }
+  .m-\[20px\] {
+    margin: 20px;
+  }
   .contents {
     display: contents;
+  }
+  .flex {
+    display: flex;
   }
   .grid {
     display: grid;
   }
   .table {
     display: table;
+  }
+  .grid-cols-\[1\] {
+    grid-template-columns: 1;
+  }
+  .grid-rows-\[8\] {
+    grid-template-rows: 8;
+  }
+  .bg-\[black\] {
+    background-color: black;
+  }
+  .bg-\[hsl\(256\,67\%\,59\%\)\] {
+    background-color: hsl(256,67%,59%);
+  }
+  .p-\[20px\] {
+    padding: 20px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-\[hsl\(0\,0\%\,100\%\)\] {
+    color: hsl(0,0%,100%);
+  }
+  .text-\[hsl\(39\,100\%\,71\%\)\] {
+    color: hsl(39,100%,71%);
+  }
+  .text-\[hsl\(254\,88\%\,90\%\)\] {
+    color: hsl(254,88%,90%);
+  }
+  .text-\[red\] {
+    color: red;
   }
   .outline {
     outline-style: var(--tw-outline-style);
