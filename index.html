@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="dist/output.css"> 
   <title>Frontend Mentor | Bento grid</title>
 </head>
-<body class="mt-8 mb-8 ml-4 mr-4 grid grid-cols-[1] grid-rows-[8] bg-[#f5f4f8] gap-[2em] font-[DM_Sans]">
-  <div class="flex flex-col justify-center items-center p-10 rounded-md bg-[hsl(256,67%,59%)]"> <!--- flex column? -->
+<body class="mt-8 mb-8 ml-4 mr-4 grid grid-cols-[1] grid-rows-[8] bg-[#f5f4f8] gap-[2em] font-[DM_Sans] xl:grid-cols-4 xl:grid-rows-6 xl: gap-[2em] xl:h-screen xl:my-[100px] xl:mx-[200px]">
+  <!-- Social media card -->
+  <div class="flex flex-col justify-center items-center p-10 rounded-md bg-[hsl(256,67%,59%)] xl:col-start-2 xl:col-end-4 xl:row-start-1 xl:row-end-3">
     <h1 class="font-normal text-[3em] leading-11 text-center text-[hsl(0,0%,100%)]">
       Social Media <span class="text-[hsl(39,100%,71%)]">10x</span> <i>Faster</i> with AI
     </h1>
@@ -17,19 +18,22 @@
       Over 4,000 5-star reviews
     </h3>
   </div>
-  <div class="flex flex-row flex-wrap justify-start items-center bg-[hsl(0,0%,100%)] p-6 rounded-md"> <!-- bg color might not be accurate-->
+  <!-- Manage multiple accounts -->
+  <div class="flex flex-row flex-wrap justify-start items-center bg-[hsl(0,0%,100%)] p-6 rounded-md xl:col-start-2 xl:col-end-3 xl:row-start-3 xl:row-end-4"> <!-- bg color might not be accurate-->
     <img src="assets/images/illustration-multiple-platforms.webp"> 
     <h2 class="text-[1.5em] mt-4 leading-5 font-medium text-left text-[hsl(0, 0%, 7%)]"> 
       Manage multiple accounts and platforms.
     </h2>
   </div>
-  <div class="bg-[hsl(39,100%,71%)] rounded-md p-4 flex flex-col justify-start text-left pb-0"> 
+  <!-- Maintain consistent posting -->
+  <div class="bg-[hsl(39,100%,71%)] rounded-md p-4 flex flex-col justify-start text-left pb-0 xl:row-start-3 xl:row-end-4 xl:col-start-3 xl:col-end-4"> 
   <h2 class="text-[1.7em] leading-5 tracking-tight font-medium mr-10"> 
     Maintain a consistent posting schedule.
   </h2>
   <img src="/assets/images/illustration-consistent-schedule.webp" class="w-[60%] justify-self-end mt-5 object-cover w-[200px] h-33 object-top"> 
   </div>
-  <div class="flex flex-col justify-center center-items text-center p-4 bg-[hsl(254,88%,90%)] rounded-md"> 
+  <!-- Schedule to social media -->
+  <div class="flex flex-col justify-center center-items text-center p-4 bg-[hsl(254,88%,90%)] rounded-md xl:row-start-1 xl:row-end-5 xl:col-start-4 xl:col-end-5"> 
   <h2 class="text-[1.5em] font-medium tracking-tight mt-3 mb-3"> 
     Schedule to social media.
   </h2>
@@ -38,30 +42,34 @@
     Optimize post timings to publish content at the perfect time for your audience.
   </h3>
   </div>
-  <div class="flex flex-col justify-center items-center text-center bg-[hsl(256,67%,59%)] rounded-md p-4"> 
+  <!-- Grow followers -->
+  <div class="flex flex-col justify-center items-center text-center bg-[hsl(256,67%,59%)] rounded-md p-4 xl:row-start-5 xl:row-end-7 xl:col-start-3 xl:col-end-5"> 
     <img src="/assets/images/illustration-grow-followers.webp" class="w-60 pt-2"> 
     <h2 class="text-[hsl(0,0%,100%)] text-[1.9em] ml-10 mr-10 leading-7 tracking-tight pt-10 pb-0"> 
     Grow followers with non-stop content.
     </h2>
   </div>
-  <div class="flex flex-col justify-start text-left rounded-md bg-[hsl(0,0%,100%)] p-4"> 
+  <!-- 56% -->
+  <div class="flex flex-col justify-start text-left rounded-md bg-[hsl(0,0%,100%)] p-4 xl:col-start-2 xl:col-end-3 xl:row-start-5 xl:row-end-7"> 
     <h2 class="text-[3em] tracking-tight leading-5 mt-5 mb-5 font-medium">>56%</h2>
     <h3 class="text-[1.2em] font-normal tracking-tight leading-5 mt-2 mb-5">faster audience growth</h3>
     <img src="/assets/images/illustration-audience-growth.webp" class="w-50">
   </div>
-  <div class="bg-[hsl(31,66%,93%)] flex flex-col justify-start p-6 rounded-md"> 
+  <!-- Create and schedule-->
+  <div class="bg-[hsl(31,66%,93%)] flex flex-col justify-start p-6 rounded-md xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-4">
     <h2 class="text-[2em] tracking-tight leading-7 font-medium"> 
     Create and schedule content <i class="text-[hsl(256,67%,59%)]">quicker.</i>
     </h2>
     <img src="/assets/images/illustration-create-post.webp" class="w-45 mt-5">
   </div>
-  <div class="flex flex-col justify-start text-left p-4 rounded-md bg-[hsl(39,100%,71%)]"> 
+  <!-- Write content -->
+  <div class="flex flex-col justify-start text-left p-4 rounded-md bg-[hsl(39,100%,71%)] xl:row-start-4 xl:row-end-7 xl:col-start-1 xl:col-end-2"> 
     <h2 class="text-[2em] tracking-tight leading-7 font-medium m-5 ml-0"> 
       Write your content using AI.
     </h2>
     <img src="/assets/images/illustration-ai-content.webp" class="w-50">
   </div>
-  <footer class="text-[0.8em] text-center">
+  <footer class="text-[0.8em] text-center hidden"> <!-- align footer -->
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Iman Osman</a>.
   </footer>
