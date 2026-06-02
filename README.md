@@ -6,5 +6,6 @@ Start Tailwind compile command - `npx @tailwindcss/cli -i src/input.css -o dist/
 I made <body> a Grid
 I made each <div> a Flex with whatever direction.
 `object-cover`, `object-top` to help crop `img` at desired place
+Use global styles where applicable
 
 # bento-grid-main
